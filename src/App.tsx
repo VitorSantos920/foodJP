@@ -1,5 +1,12 @@
+import { Container } from './Container';
+import { Header } from './components/Header';
+
 function App() {
-  return <></>;
+  return (
+    <Container>
+      <Header />
+    </Container>
+  );
 }
 
 export default App;
