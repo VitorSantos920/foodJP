@@ -1,7 +1,9 @@
 import { Container } from './Container';
+import { Dishe } from './components/Dishe';
 import { Header } from './components/Header';
 import { Hero } from './styles/Hero';
 import { MadeIn } from './styles/MadeIn';
+import { MostPopular } from './styles/MostPopular';
 
 function App() {
   return (
@@ -42,6 +44,30 @@ function App() {
             </a>
           </div>
         </MadeIn>
+
+        <MostPopular className="most-popular">
+          <h2 className="most-popular__title">Mais populares</h2>
+          <div className="dishes flex">
+            <Dishe
+              title="Ramen de Frango"
+              img="menuDishe1"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              price="30"
+            />
+            <Dishe
+              title="Ramen Apimentado"
+              img="menuDishe2"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              price="30"
+            />
+            <Dishe
+              title="Ramen Tradicional"
+              img="menuDishe3"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              price="30"
+            />
+          </div>
+        </MostPopular>
       </main>
     </Container>
   );
