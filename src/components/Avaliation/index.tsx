@@ -29,7 +29,11 @@ export function Avaliation({
       />
       <h4 className="avaliation__username">{username}</h4>
       <p className="avaliation__description">{description}</p>
-      <div className="avaliation__stars">{stars.map((star) => star)}</div>
+      <div className="avaliation__stars">
+        {stars.map((_star, index) => (
+          <Star key={index} />
+        ))}
+      </div>
     </AvaliationContainer>
   );
 }
