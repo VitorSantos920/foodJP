@@ -5,7 +5,7 @@ const { styled } = stitches;
 export const HeaderContainer = styled('header', {
   alignItems: 'center',
   justifyContent: 'space-between',
-  padding: '1.3rem .5rem',
+  padding: '1.3rem 0',
 
   '.header__logo': {
     color: '$primaryDark',
