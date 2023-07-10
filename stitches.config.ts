@@ -22,7 +22,7 @@ export const stitches = createStitches({
     },
 
     space: {
-      betweenSections: '30px',
+      betweenSections: '3rem',
     },
   },
 });
