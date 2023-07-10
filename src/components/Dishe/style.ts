@@ -39,6 +39,7 @@ export const DisheContainer = styled('div', {
     fontFamily: '$text',
     fontSize: '1.2rem',
     color: '$darkLighter',
+    lineHeight: '160%',
     margin: '1rem 0 2rem',
   },
 

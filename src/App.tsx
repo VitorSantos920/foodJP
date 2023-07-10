@@ -1,6 +1,8 @@
 import { Container } from './Container';
+import { Avaliation } from './components/Avaliation';
 import { Dishe } from './components/Dishe';
 import { Header } from './components/Header';
+import { Comments } from './styles/Comments';
 import { Hero } from './styles/Hero';
 import { MadeIn } from './styles/MadeIn';
 import { MostPopular } from './styles/MostPopular';
@@ -68,6 +70,25 @@ function App() {
             />
           </div>
         </MostPopular>
+
+        <Comments className="comments">
+          <h2 className="comments__title">Comentários</h2>
+
+          <div className="avaliations flex">
+            <Avaliation
+              username="Daniele Almeida"
+              img="imgProfile1"
+              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              startsQuantity={5}
+            />
+            <Avaliation
+              img="imgProfile2"
+              username="Ricardo França"
+              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              startsQuantity={5}
+            />
+          </div>
+        </Comments>
       </main>
     </Container>
   );
