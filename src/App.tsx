@@ -3,6 +3,7 @@ import { Avaliation } from './components/Avaliation';
 import { Dishe } from './components/Dishe';
 import { Header } from './components/Header';
 import { Comments } from './styles/Comments';
+import { Footer } from './styles/Footer';
 import { Hero } from './styles/Hero';
 import { Location } from './styles/Location';
 import { MadeIn } from './styles/MadeIn';
@@ -92,7 +93,7 @@ function App() {
         </Comments>
 
         <Location className="location">
-          <h3 className="location__title">Localização</h3>
+          <h2 className="location__title">Localização</h2>
           <img src="/map.png" className="location__img" alt="Location map" />
 
           <div className="location__input-container flex">
@@ -112,6 +113,52 @@ function App() {
           </div>
         </Location>
       </main>
+      <Footer className="footer flex">
+        <a href="" className="footer__logo">
+          Food<span>JP</span>
+        </a>
+
+        <section className="footer__col">
+          <h5 className="footer__col-title">Contato</h5>
+          <ul className="footer__items">
+            <li>
+              <a href="#">+55 21 9999-9999</a>
+            </li>
+            <li>
+              <a href="#">email@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+
+        <section className="footer__col">
+          <h5 className="footer__col-title">Sobre nós</h5>
+
+          <ul className="footer__items">
+            <li>
+              <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#">Valores</a>
+            </li>
+            <li>
+              <a href="/">Página principal</a>
+            </li>
+          </ul>
+        </section>
+
+        <section className="footer__col">
+          <h5 className="footer__col-title">Serviços</h5>
+
+          <ul className="footer__items">
+            <li>
+              <a href="#">Entrega</a>
+            </li>
+            <li>
+              <a href="#">Retirada</a>
+            </li>
+          </ul>
+        </section>
+      </Footer>
     </Container>
   );
 }
