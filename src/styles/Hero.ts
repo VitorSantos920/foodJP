@@ -5,7 +5,7 @@ const { styled } = stitches;
 export const Hero = styled('section', {
   alignItems: 'center',
   justifyContent: 'space-between',
-  marginTop: '$betweenSections',
+  marginTop: 'calc($betweenSections - 60px)',
 
   '.hero__content': {
     width: '60%',

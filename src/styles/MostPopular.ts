@@ -4,7 +4,7 @@ const { styled } = stitches;
 
 export const MostPopular = styled('section', {
   textAlign: 'center',
-  marginTop: 'calc($betweenSections + 40px)',
+  marginTop: '$betweenSections',
 
   '.most-popular__title': {
     color: '$primaryDark',
