@@ -49,7 +49,7 @@ export const HeaderContainer = styled('header', {
       left: 0,
       position: 'absolute',
       top: 0,
-      transition: '2s',
+      transition: '1s',
       width: 0,
       zIndex: -1,
     },

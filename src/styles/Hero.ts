@@ -12,8 +12,8 @@ export const Hero = styled('section', {
 
     '.hero__title': {
       color: '$primaryDark',
-      fontSize: '3rem',
       fontFamily: '$title',
+      fontSize: '3rem',
       fontWeight: '$semiBold',
     },
 
@@ -23,26 +23,49 @@ export const Hero = styled('section', {
       fontSize: '1.5rem',
       fontWeight: 'normal',
       margin: '1.5rem 0 3rem',
-      width: '100%',
       maxWidth: 540,
+      width: '100%',
     },
 
     '.hero__btn': {
       backgroundColor: '$brand',
-      border: 'none',
+      border: '2px solid $brand',
       borderRadius: '.625rem',
       color: '$white',
+      cursor: 'pointer',
       fontFamily: '$text',
       fontSize: '1.5rem',
-      padding: '1rem 5rem',
-      width: '100%',
       maxWidth: 262,
+      padding: '1rem 5rem',
+      position: 'relative',
+      transition: '1s',
+      width: '100%',
+      zIndex: 1,
+
+      '&::before': {
+        backgroundColor: '#fff',
+        borderRadius: '.625rem',
+        content: '',
+        height: '0',
+        left: 0,
+        position: 'absolute',
+        top: 0,
+        transition: '1s',
+        width: 0,
+        zIndex: -1,
+      },
+
+      '&:hover': {
+        color: '$brand',
+
+        '&::before': { width: '100%', height: '100%' },
+      },
     },
   },
 
   '.hero__img-container': {
-    width: '40%',
     textAlign: 'right',
+    width: '40%',
 
     '.hero__img': { width: '75%' },
   },
