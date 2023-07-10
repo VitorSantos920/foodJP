@@ -4,6 +4,7 @@ import { Dishe } from './components/Dishe';
 import { Header } from './components/Header';
 import { Comments } from './styles/Comments';
 import { Hero } from './styles/Hero';
+import { Location } from './styles/Location';
 import { MadeIn } from './styles/MadeIn';
 import { MostPopular } from './styles/MostPopular';
 
@@ -89,6 +90,27 @@ function App() {
             />
           </div>
         </Comments>
+
+        <Location className="location">
+          <h3 className="location__title">Localização</h3>
+          <img src="/map.png" className="location__img" alt="Location map" />
+
+          <div className="location__input-container flex">
+            <label htmlFor="location">
+              <img src="/location.svg" alt="Ícone de localização do input" />
+              <input
+                type="text"
+                id="location"
+                placeholder="Localização para entrega"
+                required
+              />
+            </label>
+
+            <button type="submit" className="location__btn">
+              Buscar
+            </button>
+          </div>
+        </Location>
       </main>
     </Container>
   );
