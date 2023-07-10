@@ -1,6 +1,7 @@
 import { Container } from './Container';
 import { Header } from './components/Header';
 import { Hero } from './styles/Hero';
+import { MadeIn } from './styles/MadeIn';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
               A culinária Japonesa é bastante equilibrada, sendo muito rica em
               peixes (ômega 3), vegetais, massas e ingredientes frescos.
             </p>
-            <button className="hero__btn">Cardápio</button>
+            <a href="#">
+              <button className="hero__btn">Cardápio</button>
+            </a>
           </div>
 
           <div className="hero__img-container">
@@ -25,6 +28,20 @@ function App() {
             />
           </div>
         </Hero>
+
+        <MadeIn className="made-in flex">
+          <img src="/holdingDishe.png" className="made-in__img" alt="" />
+          <div className="made-in__content">
+            <h2 className="made-in__title">Feita de forma Tradicional</h2>
+            <p className="made-in__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" className="made-in__readmore">
+              Ler mais sobre o modo de preparo
+            </a>
+          </div>
+        </MadeIn>
       </main>
     </Container>
   );
