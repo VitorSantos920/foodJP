@@ -20,6 +20,10 @@ export const stitches = createStitches({
       medium: 500,
       normal: 400,
     },
+
+    space: {
+      betweenSections: '30px',
+    },
   },
 });
 
