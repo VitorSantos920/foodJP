@@ -36,5 +36,26 @@ export const MadeIn = styled('section', {
       textDecoration: 'underline',
       fontFamily: '$text',
     },
+
+    '@large': {
+      '.made-in__title': { fontSize: '2rem' },
+
+      '.made-in__description, .made-in__readmore': { fontSize: '1rem' },
+    },
+  },
+
+  '@small': {
+    flexDirection: 'column',
+    gap: '3rem',
+
+    '.made-in__img': {
+      width: '100%',
+    },
+
+    '.made-in__content': {
+      width: '100%',
+      textAlign: 'center',
+      padding: '0 2rem',
+    },
   },
 });

@@ -3,9 +3,10 @@ import { stitches } from '../../stitches.config';
 const { styled } = stitches;
 
 export const Footer = styled('footer', {
-  justifyContent: 'space-between',
+  justifyContent: 'space-around',
   marginTop: '$betweenSections',
   padding: '.5rem',
+  gap: '2rem',
 
   '.footer__logo': {
     color: '$primaryDark',
@@ -31,5 +32,10 @@ export const Footer = styled('footer', {
     marginBottom: '1.5rem',
 
     '& a:hover': { textDecoration: 'underline' },
+  },
+
+  '@medium': {
+    alignItems: 'center',
+    flexDirection: 'column',
   },
 });

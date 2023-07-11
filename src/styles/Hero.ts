@@ -61,6 +61,12 @@ export const Hero = styled('section', {
         '&::before': { width: '100%', height: '100%' },
       },
     },
+
+    '@large': {
+      '.hero__title': {
+        fontSize: '2.5rem',
+      },
+    },
   },
 
   '.hero__img-container': {
@@ -68,5 +74,27 @@ export const Hero = styled('section', {
     width: '40%',
 
     '.hero__img': { width: '75%' },
+  },
+
+  '@xSmall': {
+    '.hero__content': {
+      flex: 1,
+
+      '.hero__title': {
+        fontSize: '3rem',
+      },
+
+      '.hero__description': {
+        fontSize: '2rem',
+      },
+
+      '.hero__btn': {
+        maxWidth: 'none',
+      },
+    },
+
+    '.hero__img-container': {
+      display: 'none',
+    },
   },
 });

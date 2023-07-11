@@ -14,8 +14,19 @@ export const MostPopular = styled('section', {
     marginBottom: '10rem',
   },
 
-  '.dishes': {
+  '.most-popular__dishes': {
     gap: '2rem',
     alignItems: 'center',
+  },
+
+  '@medium': {
+    '.most-popular__title': {
+      fontSize: '2rem',
+    },
+
+    '.most-popular__dishes': {
+      flexDirection: 'column',
+      gap: 125,
+    },
   },
 });

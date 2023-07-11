@@ -35,6 +35,7 @@ export const Location = styled('section', {
         flexGrow: 1,
         height: '100%',
         outline: 0,
+        width: '100%',
 
         '&, &::placeholder': {
           color: '$primaryDark',
@@ -52,9 +53,27 @@ export const Location = styled('section', {
       fontFamily: '$text',
       fontSize: '1.5rem',
       maxWidth: 262,
-      padding: '1rem 5rem',
+      padding: '1rem 3rem',
 
       '&:hover': { filter: 'brightness(90%)' },
+
+      img: {
+        display: 'none',
+      },
+    },
+  },
+  '@xSmall': {
+    '.location__title': {
+      fontSize: '2rem',
+    },
+    '.location__input-container label': {
+      width: '100%',
+    },
+
+    '.location__input-container .location__btn': {
+      padding: '1rem',
+      span: { display: 'none' },
+      img: { display: 'block' },
     },
   },
 });

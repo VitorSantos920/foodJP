@@ -51,7 +51,7 @@ function App() {
 
         <MostPopular className="most-popular">
           <h2 className="most-popular__title">Mais populares</h2>
-          <div className="dishes flex">
+          <div className="most-popular__dishes flex">
             <Dishe
               title="Ramen de Frango"
               img="menuDishe1"
@@ -108,7 +108,8 @@ function App() {
             </label>
 
             <button type="submit" className="location__btn">
-              Buscar
+              <img src="/loupe.svg" alt="" />
+              <span>Buscar</span>
             </button>
           </div>
         </Location>

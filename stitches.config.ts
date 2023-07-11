@@ -25,6 +25,12 @@ export const stitches = createStitches({
       betweenSections: '5.5rem',
     },
   },
+  media: {
+    large: '(max-width: 998px)',
+    medium: '(max-width: 835px)',
+    xSmall: '(max-width: 715px)',
+    small: '(max-width: 575px)',
+  },
 });
 
 globalCss({

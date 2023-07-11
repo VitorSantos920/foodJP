@@ -26,4 +26,10 @@ export const AvaliationContainer = styled('div', {
   },
 
   svg: { marginRight: '.5rem' },
+
+  '@medium': {
+    '.avaliation__description': {
+      width: '100%',
+    },
+  },
 });

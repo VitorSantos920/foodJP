@@ -14,4 +14,16 @@ export const Comments = styled('section', {
   },
 
   '.avaliations': { gap: '1rem' },
+
+  '@small': {
+    textAlign: 'center',
+
+    '.comments__title': {
+      fontSize: '2rem',
+    },
+
+    '.avaliations': {
+      flexDirection: 'column',
+    },
+  },
 });

@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import { HeaderContainer } from './style';
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleMenu() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <HeaderContainer className="header flex">
       <a href="#" className="header__logo">
         Food<span>JP</span>
       </a>
 
-      <nav className="header__menu">
+      <nav className={`header__menu ${isOpen ? 'open' : 'close'}`}>
         <ul className="header__menu-items flex">
           <li className="header__item item-1">
             <a href="#">Início</a>
@@ -21,9 +28,11 @@ export function Header() {
         </ul>
       </nav>
 
-      <a href="#">
+      <a href="#" className={`header__link ${isOpen ? 'open' : 'close'}`}>
         <button className="header__btn">Entrar</button>
       </a>
+
+      <img src="/menu.svg" alt="" onClick={handleMenu} />
     </HeaderContainer>
   );
 }

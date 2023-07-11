@@ -6,6 +6,7 @@ export const HeaderContainer = styled('header', {
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '1.3rem 0',
+  flexWrap: 'wrap',
 
   '.header__logo': {
     color: '$primaryDark',
@@ -20,6 +21,7 @@ export const HeaderContainer = styled('header', {
     fontFamily: '$text',
     fontWeight: '$medium',
     gap: '5rem',
+    position: 'relative',
 
     a: {
       transition: '.4s',
@@ -27,6 +29,8 @@ export const HeaderContainer = styled('header', {
       '&:hover': { color: '$brand' },
     },
   },
+
+  img: { display: 'none' },
 
   '.header__btn': {
     background: 'transparent',
@@ -58,6 +62,55 @@ export const HeaderContainer = styled('header', {
       color: '#fff',
 
       '&::before': { width: '100%', height: '100%' },
+    },
+  },
+
+  '@xSmall': {
+    '.header__menu, > a.close': { display: 'none' },
+
+    '.header__menu.open': {
+      display: 'block',
+      position: 'absolute',
+      top: 70,
+      color: '$white',
+      right: 0,
+
+      '.header__menu-items': {
+        border: '2px solid $brand',
+        backgroundColor: '$brand',
+        padding: '2rem',
+        borderRadius: '.75rem',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        height: '280px',
+        gap: '1rem',
+        width: '50vw',
+        fontSize: '2rem',
+
+        'a:hover': { color: '$white' },
+      },
+    },
+
+    'a.open': {
+      position: 'absolute',
+      left: '55vw',
+      top: 270,
+      zIndex: 2,
+      button: {
+        color: '$white',
+
+        '&::before': {
+          backgroundColor: '$white',
+          zIndex: -1,
+        },
+
+        '&:hover': { color: '$brand !important' },
+      },
+    },
+
+    img: {
+      display: 'block',
+      cursor: 'pointer',
     },
   },
 });
