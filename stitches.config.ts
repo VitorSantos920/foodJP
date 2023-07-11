@@ -43,4 +43,13 @@ globalCss({
   ul: { listStyle: 'none' },
 
   '.flex': { display: 'flex' },
+
+  '::-webkit-scrollbar': {
+    width: 10,
+  },
+
+  '::-webkit-scrollbar-thumb': {
+    backgroundColor: '$brand',
+    borderRadius: '.75rem',
+  },
 })();
