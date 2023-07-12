@@ -26,6 +26,7 @@ export function Avaliation({
         src={`/${img}.png`}
         alt={username}
         className="avaliation__user-img"
+        loading="lazy"
       />
       <h4 className="avaliation__username">{username}</h4>
       <p className="avaliation__description">{description}</p>
