@@ -94,39 +94,39 @@ function App() {
               startsQuantity={5}
             />
             <Avaliation
-              username="Daniele Almeida"
+              username="Aline Silva"
               img="imgProfile1"
-              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              description="Recomendo muito! Ambiente bom, comida boa."
               startsQuantity={5}
             />
             <Avaliation
               img="imgProfile2"
-              username="Ricardo França"
-              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              username="Lucas Augusto"
+              description="Muito bacana."
               startsQuantity={5}
             />
             <Avaliation
-              username="Daniele Almeida"
+              username="Eduarda Santos"
               img="imgProfile1"
-              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              description="Não estava muito confiante no lugar, mas depois dessa experiência perfeita, voltarei com certeza!"
               startsQuantity={5}
             />
             <Avaliation
               img="imgProfile2"
-              username="Ricardo França"
-              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              username="José Santos"
+              description="Comida deliciosa e ambiente muito agradável"
               startsQuantity={5}
             />
             <Avaliation
-              username="Daniele Almeida"
+              username="Maria Silva"
               img="imgProfile1"
-              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              description="Gente, é um ambiente harmonioso demais, foi perfeito!"
               startsQuantity={5}
             />
             <Avaliation
               img="imgProfile2"
-              username="Ricardo França"
-              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              username="Augusto Pimentel"
+              description="Lugar MARAVILHOSO! Não tem defeitos!"
               startsQuantity={5}
             />
           </div>
