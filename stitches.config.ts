@@ -50,9 +50,7 @@ globalCss({
 
   '.flex': { display: 'flex' },
 
-  '::-webkit-scrollbar': {
-    width: 10,
-  },
+  '::-webkit-scrollbar': { maxHeight: 10 },
 
   '::-webkit-scrollbar-thumb': {
     backgroundColor: '$brand',

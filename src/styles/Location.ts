@@ -54,7 +54,6 @@ export const Location = styled('section', {
     },
   },
   '@xSmall': {
-    '.location__title': { fontSize: '2rem' },
     '.location__input-container label': {
       width: '100%',
     },
