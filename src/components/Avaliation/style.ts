@@ -6,7 +6,9 @@ export const AvaliationContainer = styled('div', {
   background: '#F3F3F3',
   borderRadius: '1rem',
   flex: 1,
+  minWidth: 634,
   padding: '2.5rem',
+  scrollSnapAlign: 'start',
 
   '.avaliation__username': {
     color: '$primaryDark',
@@ -30,6 +32,13 @@ export const AvaliationContainer = styled('div', {
   '@medium': {
     '.avaliation__description': {
       width: '100%',
+    },
+  },
+
+  '@small': {
+    '&': {
+      minWidth: 'min-content',
+      scrollSnapAlign: 'none',
     },
   },
 });

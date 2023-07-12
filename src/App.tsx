@@ -93,6 +93,42 @@ function App() {
               description="Não é apenas a comida excelente, o serviço torna a experiência especial."
               startsQuantity={5}
             />
+            <Avaliation
+              username="Daniele Almeida"
+              img="imgProfile1"
+              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              startsQuantity={5}
+            />
+            <Avaliation
+              img="imgProfile2"
+              username="Ricardo França"
+              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              startsQuantity={5}
+            />
+            <Avaliation
+              username="Daniele Almeida"
+              img="imgProfile1"
+              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              startsQuantity={5}
+            />
+            <Avaliation
+              img="imgProfile2"
+              username="Ricardo França"
+              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              startsQuantity={5}
+            />
+            <Avaliation
+              username="Daniele Almeida"
+              img="imgProfile1"
+              description="Ótimo serviço! Encantada com a qualidade dos pratos."
+              startsQuantity={5}
+            />
+            <Avaliation
+              img="imgProfile2"
+              username="Ricardo França"
+              description="Não é apenas a comida excelente, o serviço torna a experiência especial."
+              startsQuantity={5}
+            />
           </div>
         </Comments>
 
@@ -102,7 +138,11 @@ function App() {
 
           <div className="location__input-container flex">
             <label htmlFor="location">
-              <img src="/location.svg" alt="Ícone de localização do input" />
+              <img
+                src="/location.svg"
+                alt="Ícone de localização do input"
+                loading="lazy"
+              />
               <input
                 type="text"
                 id="location"
