@@ -8,20 +8,8 @@ export const Footer = styled('footer', {
   padding: '.5rem',
   gap: '2rem',
 
-  '.footer__logo': {
-    color: '$primaryDark',
-    fontFamily: '$title',
-    fontSize: '2.5rem',
-    fontWeight: '$bold',
-
-    span: { color: '$brand' },
-  },
-
   '.footer__col-title': {
-    color: '$primaryDark',
-    fontFamily: '$title',
     fontSize: '2rem',
-    fontWeight: '$semiBold',
     marginBottom: '2rem',
   },
 

@@ -5,13 +5,6 @@ const { styled } = stitches;
 export const Location = styled('section', {
   marginTop: '$betweenSections',
 
-  '.location__title': {
-    color: '$primaryDark',
-    fontFamily: '$title',
-    fontSize: '3rem',
-    fontWeight: '$semiBold',
-  },
-
   '.location__img': {
     margin: '2rem 0',
     width: '100%',
@@ -57,21 +50,18 @@ export const Location = styled('section', {
 
       '&:hover': { filter: 'brightness(90%)' },
 
-      img: {
-        display: 'none',
-      },
+      img: { display: 'none' },
     },
   },
   '@xSmall': {
-    '.location__title': {
-      fontSize: '2rem',
-    },
+    '.location__title': { fontSize: '2rem' },
     '.location__input-container label': {
       width: '100%',
     },
 
     '.location__input-container .location__btn': {
       padding: '1rem',
+
       span: { display: 'none' },
       img: { display: 'block' },
     },

@@ -1,13 +1,15 @@
-import { Container } from './Container';
 import { Avaliation } from './components/Avaliation';
-import { Dishe } from './components/Dishe';
-import { Header } from './components/Header';
 import { Comments } from './styles/Comments';
+import { Container } from './Container';
+import { Dishe } from './components/Dishe';
 import { Footer } from './styles/Footer';
+import { Header } from './components/Header';
 import { Hero } from './styles/Hero';
 import { Location } from './styles/Location';
+import { Logo } from './styles/Logo';
 import { MadeIn } from './styles/MadeIn';
 import { MostPopular } from './styles/MostPopular';
+import { Title, Subtitle, FooterTitle } from './styles/Title';
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
       <main>
         <Hero className="hero flex">
           <div className="hero__content">
-            <h1 className="hero__title">Comida Oriental</h1>
+            <Title className="hero__title">Comida Oriental</Title>
             <p className="hero__description">
               A culinária Japonesa é bastante equilibrada, sendo muito rica em
               peixes (ômega 3), vegetais, massas e ingredientes frescos.
@@ -38,7 +40,9 @@ function App() {
         <MadeIn className="made-in flex">
           <img src="/holdingDishe.png" className="made-in__img" alt="" />
           <div className="made-in__content">
-            <h2 className="made-in__title">Feita de forma Tradicional</h2>
+            <Subtitle className="made-in__title">
+              Feita de forma Tradicional
+            </Subtitle>
             <p className="made-in__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -50,7 +54,7 @@ function App() {
         </MadeIn>
 
         <MostPopular className="most-popular">
-          <h2 className="most-popular__title">Mais populares</h2>
+          <Subtitle className="most-popular__title">Mais populares</Subtitle>
           <div className="most-popular__dishes flex">
             <Dishe
               title="Ramen de Frango"
@@ -74,7 +78,7 @@ function App() {
         </MostPopular>
 
         <Comments className="comments">
-          <h2 className="comments__title">Comentários</h2>
+          <Subtitle className="comments__title">Comentários</Subtitle>
 
           <div className="avaliations flex">
             <Avaliation
@@ -93,7 +97,7 @@ function App() {
         </Comments>
 
         <Location className="location">
-          <h2 className="location__title">Localização</h2>
+          <Subtitle className="location__title">Localização</Subtitle>
           <img src="/map.png" className="location__img" alt="Location map" />
 
           <div className="location__input-container flex">
@@ -114,13 +118,14 @@ function App() {
           </div>
         </Location>
       </main>
+
       <Footer className="footer flex">
-        <a href="" className="footer__logo">
+        <Logo href="#" className="footer__logo">
           Food<span>JP</span>
-        </a>
+        </Logo>
 
         <section className="footer__col">
-          <h5 className="footer__col-title">Contato</h5>
+          <FooterTitle className="footer__col-title">Contato</FooterTitle>
           <ul className="footer__items">
             <li>
               <a href="#">+55 21 9999-9999</a>
@@ -132,7 +137,7 @@ function App() {
         </section>
 
         <section className="footer__col">
-          <h5 className="footer__col-title">Sobre nós</h5>
+          <FooterTitle className="footer__col-title">Sobre nós</FooterTitle>
 
           <ul className="footer__items">
             <li>
@@ -148,7 +153,7 @@ function App() {
         </section>
 
         <section className="footer__col">
-          <h5 className="footer__col-title">Serviços</h5>
+          <FooterTitle className="footer__col-title">Serviços</FooterTitle>
 
           <ul className="footer__items">
             <li>

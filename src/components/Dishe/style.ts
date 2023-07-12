@@ -14,9 +14,7 @@ export const DisheContainer = styled('div', {
   padding: '2rem 1.5rem',
   transition: '.2s',
 
-  '@medium': {
-    height: 365,
-  },
+  '@medium': { height: 365 },
 
   '&:hover': {
     boxShadow: '0 0 5px 2px gray',
@@ -33,8 +31,8 @@ export const DisheContainer = styled('div', {
 
   '.dishe__title': {
     color: '$primaryDark',
-    fontSize: '2rem',
     fontFamily: '$title',
+    fontSize: '2rem',
     fontWeight: '$semiBold',
   },
 
@@ -55,16 +53,10 @@ export const DisheContainer = styled('div', {
   },
 
   '@large': {
-    '.dishe__img': {
-      height: 235,
-    },
+    '.dishe__img': { height: 235 },
 
-    '.dishe__title': {
-      fontSize: '1.7rem',
-    },
+    '.dishe__title': { fontSize: '1.7rem' },
 
-    '.dishe__description': {
-      fontSize: '1rem',
-    },
+    '.dishe__description': { fontSize: '1rem' },
   },
 });

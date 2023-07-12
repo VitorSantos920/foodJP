@@ -7,19 +7,10 @@ export const MadeIn = styled('section', {
   justifyContent: 'space-between',
   marginTop: '$betweenSections',
 
-  '.made-in__img': {
-    width: '50%',
-  },
+  '.made-in__img': { width: '50%' },
 
   '.made-in__content': {
     width: '40%',
-
-    '.made-in__title': {
-      color: '$primaryDark',
-      fontSize: '3rem',
-      fontFamily: '$title',
-      fontWeight: '$semiBold',
-    },
 
     '.made-in__description': {
       color: '$primaryDark',
@@ -48,9 +39,7 @@ export const MadeIn = styled('section', {
     flexDirection: 'column',
     gap: '3rem',
 
-    '.made-in__img': {
-      width: '100%',
-    },
+    '.made-in__img': { width: '100%' },
 
     '.made-in__content': {
       width: '100%',

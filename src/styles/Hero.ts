@@ -10,13 +10,6 @@ export const Hero = styled('section', {
   '.hero__content': {
     width: '60%',
 
-    '.hero__title': {
-      color: '$primaryDark',
-      fontFamily: '$title',
-      fontSize: '3rem',
-      fontWeight: '$semiBold',
-    },
-
     '.hero__description': {
       color: '$primaryDark',
       fontFamily: '$text',

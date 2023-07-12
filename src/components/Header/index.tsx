@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { HeaderContainer } from './style';
+import { Logo } from '../../styles/Logo';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ export function Header() {
 
   return (
     <HeaderContainer className="header flex">
-      <a href="#" className="header__logo">
+      <Logo href="#" className="header__logo">
         Food<span>JP</span>
-      </a>
+      </Logo>
 
       <nav className={`header__menu ${isOpen ? 'open' : 'close'}`}>
         <ul className="header__menu-items flex">
